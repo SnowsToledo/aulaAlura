@@ -1,0 +1,220 @@
+/* soft reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/fundo.jpg');
+    background-size: 100vw 100vh;
+    font-family: 'Roboto Mono', monospace;
+    height: 100vh;
+    font-size: 30px;
+}
+
+/* Se a tela estiver pelo menos 400px, cai nesse caso: */
+@media (min-width: 400px) {
+    body{
+        font-size: 20px;
+    }
+}
+
+header {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    background-color:white;
+    position: fixed;
+    top:0px;
+    width: 100vw;
+    z-index: 1;
+
+}
+
+.menu li {
+    list-style: none
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 1s, color 1s;
+}
+
+.nenu a:active,
+.menu a:hover {
+    background-color: teal;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: teal;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.titles{
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+
+    animation: ease 2s animationTitle forwards;
+}
+
+@keyframes animationTitle {
+    100% {
+        transform: scale(1) translateY(0);
+    opacity: 1;
+    }
+}
+
+.site-subtitle,
+.site-title {
+    color: whitesmoke;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    font-size: 8em;
+}
+
+.site-subtitle{
+    font-style: italic;
+}
+
+.img-portfolio{
+    height: 190px;
+    width: 250px;
+    object-fit: cover;
+    transition: transform 700ms;
+}
+
+.img-portfolio:hover{
+    transform: scale(1.1);
+}
+
+.card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.flip-card{
+    perspective: 300px;
+}
+
+.flip-card:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card-front, 
+.card-back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card-back {
+    height: 190px;
+    width: 250px;
+    transform: rotateY(180deg);
+}
+
+.sobre,
+.contact,
+.portfolio{
+    background-size: 100vh;
+    font-size: 1.2em;
+    min-height: 100vh;
+    margin-bottom: 1.5em;
+    padding: 2em;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.sobre h2,
+.contact h2,
+.portfolio h2{
+    color: white;
+    font-family: 'Kalam', cursive;
+}
+
+.sobre p {
+    color: white;
+    margin-bottom: 1.4em;
+    text-indent: 1.6em;
+    text-align: justify;
+}
+
+.sobre a {
+    color: darkcyan
+}
+
+.sobre img{
+    float: right;
+    margin: 1.2em;
+    border-radius: 50%;
+
+}
+
+.portfolio .grid {
+    align-content: center;
+    color: white;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 240px;
+    height: calc(100vh - 6.7em);
+    justify-content: space-around;
+}
+
+@media (min-width: 560px) {
+    .portfolio .grid {
+        grid-template-columns: 240px 240px;
+    }
+}
+
+@media (min-width: 890px) {
+    .portfolio .grid {
+        grid-template-columns: 240px 240px 240px;
+    }
+}
+
+.portfolio figure {
+    text-align: center;
+}
+
+.portfolio 
+
+.contact a{
+    color: dodgerblue;
+    font-size: 10em;
+    transition: text-shadow 1s;
+}
+
+.contact a:active,
+.contact a:hover{
+    text-decoration: none;
+    text-shadow: 0px 0px 40px lightseagreen;
+}
+
+.contact .icons {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}

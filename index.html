@@ -1,22 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Felipe Toledo</title>
+    <link rel="stylesheet" type="text/css" href="css/arquivoCSS.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Permanent+Marker&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5f299b32b1.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
     <header>
-        <link rel="stylesheet" type="text/css" href="aulasAlura/arquivoCSS.css">
-        <nav class="menu">
+        <nav class="menu container">
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Port</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#sobre">About</a></li>
+                <li><a href="#port">Port</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <h1 class="site-title">Felipe Toledo</h1>
-        <h2 class="site-subtitle">Student</h2>
+
+        <div class="titles">\
+            <h1 class="site-title">Felipe Toledo</h1>
+            <h2 class="site-subtitle">Student</h2>
+        </div>
+
     </header>
-</body>
-</html>
+    <section class="sobre container">
+        <h2>Sobre</h2>
+
+        <figure>
+            <img src="https://pbs.twimg.com/profile_images/1066463435704143873/xJA6mTAm_400x400.jpg" alt="Felipe Toledo">
+        </figure>
+
+       <p>
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum eum asperiores exercitationem facilis dolores repellat autem nobis dolorem quam voluptas provident harum magnam cupiditate natus aliquid, fugit quisquam repudiandae cumque?
+       </p>
+
+       <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione iusto quae dicta illum, possimus id? Ea id laudantium nostrum corporis, reprehenderit obcaecati numquam facere provident suscipit sunt. Pariatur, minima sequi.
+       </p>
+
+       <p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. At nobis aspernatur, repellendus ex aliquam magni tempore. Error aliquid vitae commodi assumenda deleniti minus, quam aspernatur possimus enim corporis rerum ad.
+       </p>
+
+       <p>
+            Este site foi construído durante a <a href="https://www.alura.com.br/imercao-css">Imersão CSS da Alura</a>
+       </p>
+    </section>
+    <section class="portfolio container" id="port">
+        <h2>Portfólio</h2>
+
+        <div class="grid">
+
+            <div class="flip-card">
+                <div class="card">
+                    <figure class="card-front">
+                        <img class="img-portfolio" src="./img/eCommerce.jfif" alt="eCommerce">
+                        <figcaption>eCommerce</figcaption>
+                    </figure>
+
+                    <div class="card-back"> 
+                        Sou eu a parte de trás
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="card">
+                    <figure class="card-front">
+                        <img class="img-portfolio" src="./img/mobile.jfif" alt=">Mobile">
+                        <figcaption>Mobile</figcaption>
+                    </figure>
     
+                    <div class="card-back">
+                        Sou eu a parte de trás
+                    </div>
+                </div>
+            </div>
+
+            <figure>
+                <img class="img-portfolio" src="./img/webdesign.jfif" alt="Web design">
+                <figcaption>Web design</figcaption>
+            </figure>
+
+            <figure>
+                <img class="img-portfolio" src="./img/projeto.jfif" alt="Projetos pessoais">
+                <figcaption>Projetos pessoais</figcaption>
+            </figure>
+
+        </div>
+
+    </section>
+    <section class="contact container" id="contact">
+        <h2>Contact</h2>
+        
+        <div class="grid icons">
+            <a taget="_blank" href="https://github.com/SnowsToledo"><i class="fab fa-github"></i></a>
+
+            <a taget="_blank" href="https://twitter.com/SnowsToledo"><i class="fab fa-twitter"></i></a>
+
+            <a taget="_blank" href="https://www.instagram.com/felipe.ftn/"><i class="fab fa-instagram"></i></a>
+        </div>
+
+    </section>
+</body>
+
+</html>
